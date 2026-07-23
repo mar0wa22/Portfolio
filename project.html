@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Project</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+<video autoplay muted loop class="back-vid">
+<source src="images/galaxy.mp4" type="video/mp4">
+</video>
+
+<section class="main-section">
+
+<nav>
+
+<h1>
+
+<span style="color:#4acfee;" data-lang="engineer">
+Engineer
+</span>
+Marwa Al-Mansour
+
+</h1>
+
+<ul>
+
+<li>
+<a href="index.html" data-lang="home">Home</a>
+</li>
+
+<li>
+<a href="about.html" data-lang="about">About</a>
+</li>
+
+<li>
+<a href="projects.html" class="active" data-lang="projects">
+Projects
+</a>
+</li>
+
+<li>
+<a href="contact.html" data-lang="contact">
+Contact
+</a>
+</li>
+</ul>
+<div class="menu-toggle" id="menu-toggle">
+    <i class='bx bx-menu'></i>
+</div>
+<div class="nav-tools">
+
+    <div class="language-toggle" id="language-toggle">
+         EN
+    </div>
+
+    <div class="theme-toggle" id="theme-toggle">
+        <i class='bx bx-moon'></i>
+    </div>
+
+</div>
+</nav>
+
+<section class="project-details">
+
+<h1 class="title" id="project-title"></h1>
+
+<p class="projects-subtitle" id="project-description"></p>
+
+<div class="slider">
+
+<button id="prev">
+
+<i class='bx bx-chevron-left'></i>
+
+</button>
+
+<img id="slider-image">
+
+<button id="next">
+
+<i class='bx bx-chevron-right'></i>
+
+</button>
+
+</div>
+
+<div class="dots" id="dots"></div>
+
+<div class="project-description">
+
+<h2 data-lang="technologies">
+Technologies
+</h2>
+
+<div class="tech" id="project-tech"></div>
+
+<h2 data-lang="features">
+Features
+</h2>
+
+<ul id="project-features"></ul>
+
+<br>
+
+<a id="github-link"
+class="btn"
+target="_blank"
+data-lang="github">
+
+GitHub
+
+</a>
+
+<a id="website-link"
+class="btn"
+target="_blank"
+data-lang="liveDemo">
+
+Live Demo
+
+</a>
+
+<a href="projects.html"
+class="btn"
+data-lang="back">
+
+Back
+
+</a>
+
+</div>
+
+</section>
+
+</section>
+
+<script src="projects-data.js"></script>
+
+<script src="project.js"></script>
+
+<div id="lightbox" class="lightbox">
+
+<span id="close-lightbox">&times;</span>
+
+<img id="lightbox-img">
+
+</div>
+
+<script src="theme.js"></script>
+<script src="language.js"></script>
+<script src="menu.js"></script>
+</body>
+
+</body>
+
+</html>
