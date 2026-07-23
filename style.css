@@ -1282,7 +1282,7 @@ margin-bottom: 30px;
 .btn {
 padding: 12px 20px;
 font-size: 14px;
-width: 100%;
+width: auto;
 text-align: center;
 margin-right: 0;
 margin-bottom: 10px;
