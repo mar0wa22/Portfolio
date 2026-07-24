@@ -1076,10 +1076,10 @@ font-size: 1rem;
 
 .ul-icons {
 justify-content: center;
-transform: translateY(20px); }
+transform: none; }
 
 .btn {
-padding: 12px 12px;
+padding: 12px 22px;
 font-size: 15px;
 }
 
@@ -1432,7 +1432,7 @@ flex-direction: row-reverse;
 
 [dir="rtl"] .contact-form input,
 [dir="rtl"] .contact-form textarea {
-text-align: right;
+text-align: center;
 }
 
 /* ===========================
