@@ -186,7 +186,7 @@ color: #4acfee;
 display: flex;
 align-items: center;
 flex-wrap: wrap;
-transform: translateY(40px);
+transform: none;
 }
 
 .ul-icons li {
