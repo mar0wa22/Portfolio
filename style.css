@@ -1114,7 +1114,7 @@ flex-direction: column;
 }
 
 .project-buttons .btn {
-width: 100%;
+width: auto;
 text-align: center;
 margin-right: 0;
 }
