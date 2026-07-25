@@ -31,7 +31,7 @@ const projects = {
                 "معرض صور"
             ]
         },
-        github: "https://github.com/mar0wa22/Portfolio",
+        github: "https://github.com",
         demo: "https://portfolio-mar0wa22s-projects.vercel.app",
         images: [
             "images/projects/portfolio/1.png",
@@ -70,7 +70,7 @@ const projects = {
                 "الهوية البصرية"
             ]
         },
-        github: "https://github.com/mar0wa22/Portfolio",
+        github: "https://github.com",
         demo: "https://portfolio-mar0wa22s-projects.vercel.app",
         images: [
             "images/projects/design/1.png",

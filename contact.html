@@ -89,20 +89,34 @@
                         </p>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <input
-                        type="text"
-                        data-lang-placeholder="yourName"
-                        placeholder="Your Name">
-                    <input
-                        type="email"
-                        data-lang-placeholder="yourEmail"
-                        placeholder="Your Email">
-                    <textarea rows="6" data-lang-placeholder="message" placeholder="Write your message..."></textarea>
-                    <button type="submit" class="btn" data-lang="sendMessage">
-                        Send Message
-                    </button>
-                </form>
+                <form id="contact-form" class="contact-form">
+
+    <input
+        type="text"
+        name="name"
+        data-lang-placeholder="yourName"
+        placeholder="Your Name"
+        required>
+
+    <input
+        type="email"
+        name="email"
+        data-lang-placeholder="yourEmail"
+        placeholder="Your Email"
+        required>
+
+    <textarea
+        name="message"
+        rows="6"
+        data-lang-placeholder="message"
+        placeholder="Write your message..."
+        required></textarea>
+
+    <button type="submit" class="btn" data-lang="sendMessage">
+        Send Message
+    </button>
+
+</form>
             </div>
         </section>
 
@@ -147,5 +161,7 @@
     <script src="theme.js"></script>
     <script src="language.js"></script>
     <script src="menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="contact.js"></script>
 </body>
 </html>
