@@ -106,7 +106,7 @@ const projects = {
                 "واجهة متجاوبة"
             ]
         },
-        github: "https://github.com/mar0wa22/Portfolio",
+        github: "https://github.com/mar0wa22",
         demo: "https://portfolio-mar0wa22s-projects.vercel.app",
         images: [
             "images/projects/flutter/1.png",
