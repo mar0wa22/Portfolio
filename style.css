@@ -193,9 +193,45 @@ flex-wrap: wrap;
 transform: none;
 }
 
-.ul-icons li {
-list-style: none;
-margin-left: 10px;
+.ul-icons li{
+    list-style: none;
+    margin-left: 10px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: socialFade .6s ease forwards;
+}
+
+.ul-icons li:nth-child(1){
+    animation-delay: .2s;
+}
+
+.ul-icons li:nth-child(2){
+    animation-delay: .35s;
+}
+
+.ul-icons li:nth-child(3){
+    animation-delay: .5s;
+}
+
+.ul-icons li:nth-child(4){
+    animation-delay: .65s;
+}
+
+.ul-icons li:nth-child(5){
+    animation-delay: .8s;
+}
+
+@keyframes socialFade{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .ul-icons a { display: inline-flex;
