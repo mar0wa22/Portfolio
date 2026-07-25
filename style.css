@@ -1514,3 +1514,35 @@ border-radius: 10px;
 ::-webkit-scrollbar-thumb:hover {
 background: #53f8c9;
 }
+
+/*==============================
+SUCCESS MESSAGE
+==============================*/
+
+.toast{
+    position:fixed;
+    top:30px;
+    right:30px;
+    background:#4acfee;
+    color:#08131d;
+    padding:16px 22px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    box-shadow:0 0 20px #4acfee;
+    transform:translateX(350px);
+    opacity:0;
+    transition:.5s;
+    z-index:999999;
+}
+
+.toast.show{
+    transform:translateX(0);
+    opacity:1;
+}
+
+.toast i{
+    font-size:26px;
+}

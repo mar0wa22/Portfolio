@@ -5,9 +5,16 @@
 })();
 
 const form = document.getElementById("contact-form");
+if (!form) return;
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
+
+
+    const button = form.querySelector("button");
+
+button.disabled = true;
+button.innerHTML = "Sending...";
 
     emailjs.sendForm(
         "service_1y3t7gr",
@@ -15,11 +22,25 @@ form.addEventListener("submit", function (e) {
         this
     )
     .then(function () {
-        alert("✅ Message sent successfully!");
+       button.innerHTML =
+    document.documentElement.lang === "ar"
+        ? "إرسال الرسالة"
+        : "Send Message";
+        const toast = document.getElementById("toast");
+
+toast.classList.add("show");
+
+setTimeout(() => {
+    toast.classList.remove("show");
+},3000);
         form.reset();
     })
     .catch(function (error) {
+      button.innerHTML =
+    document.documentElement.lang === "ar"
+        ? "إرسال الرسالة"
+        : "Send Message";
         console.error(error);
-        alert("❌ Failed to send message.");
+      
     });
 });
