@@ -1,0 +1,14 @@
+{
+  "name": "Marwa Portfolio",
+  "short_name": "Marwa",
+  "icons": [
+    {
+      "src": "images/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#08131f",
+  "background_color": "#08131f",
+  "display": "standalone"
+}
