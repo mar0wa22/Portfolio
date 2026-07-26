@@ -1476,10 +1476,6 @@ margin-left: 0; margin-right: 10px;
 padding-right: 0;
 }
 
-[dir="rtl"] .hero {
-flex-direction: row-reverse;
-}
-
 [dir="rtl"] .contact-form input,
 [dir="rtl"] .contact-form textarea {
 text-align: center;
