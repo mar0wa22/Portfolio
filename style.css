@@ -996,197 +996,155 @@ padding: 25px;
 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 }
+
 /* ===========================
 RESPONSIVE - 768px (Mobile)
 =========================== */
-@media (max-width:768px){
-
-body{
-    padding:15px 0;
-    background:linear-gradient(135deg,#050816 0%,#0a1628 50%,#050816 100%);
+@media (max-width: 768px) {
+body {
+padding: 15px 0;
 }
 
-.main-section{
-    width:95%;
-    border-radius:25px;
-    padding-bottom:40px;
+.main-section {
+width: 95%;
+border-radius: 25px;
+padding-bottom: 40px;
 }
-
-/* ===========================
-NAVBAR
-=========================== */
 
 nav{
-    position:relative;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
 }
 
-/* عنوان الموقع */
-nav h1{
-    width:100%;
-    font-size:22px;
-    text-align:left;
-}
-
-/* زر اللغة */
 .nav-tools{
-    position:absolute;
-    top:20px;
-    left:20px;
-}
-
-/* زر القائمة */
-.menu-toggle{
-    display:block;
-    position:absolute;
-    top:20px;
-    right:20px;
-    font-size:34px;
-    color:#4acfee;
-    cursor:pointer;
-}
-
-/* عند العربية */
-[dir="rtl"] nav h1{
-    text-align:right;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 [dir="rtl"] .nav-tools{
-    left:auto;
-    right:20px;
+    flex-direction: row;
+}
+nav h1 {
+font-size: 22px;
 }
 
-[dir="rtl"] .menu-toggle{
-    right:auto;
-    left:20px;
+.menu-toggle {
+display: block;
 }
 
-/* القائمة المنسدلة */
-
-nav ul{
-    display:none;
-    flex-direction:column;
-    position:absolute;
-    top:80px;
-    left:0;
-    width:100%;
-    background:rgba(10,15,30,.97);
-    backdrop-filter:blur(20px);
-    border-radius:20px;
-    padding:20px 0;
-    z-index:1000;
+nav ul {
+display: none;
+flex-direction: column;
+position: absolute;
+top: 80px; left: 0;
+width: 100%;
+background: rgba(10, 15, 30, 0.97);
+backdrop-filter: blur(20px);
+padding: 20px 0;
+border-radius: 20px;
+z-index: 1000;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-nav ul.show{
-    display:flex;
+nav ul.show {
+display: flex;
 }
 
-nav ul li{
-    text-align:center;
-    padding:15px 0;
+nav ul li {
+text-align: center;
+padding: 15px 0;
 }
 
-nav a{
-    font-size:18px;
-    padding:10px 20px;
+nav a {
+font-size: 18px;
+padding: 10px 20px;
 }
 
-/* ===========================
-HERO
-=========================== */
-
-.hero{
-    flex-direction:column-reverse;
-    text-align:center;
-    padding:30px 5%;
-    gap:30px;
+.hero {
+padding: 30px 5%;
+gap: 30px;
 }
-
 .hero-info{
-    width:100%;
+   width: 100%;
+}
+.hero-img {
+width: 250px;
+height: 250px;
+max-width: 250px;
 }
 
-.hero-img{
-    width:250px;
-    height:250px;
-    max-width:250px;
-    margin:auto;
+.hero h1 {
+font-size: 2rem;
 }
 
-.hero h1{
-    font-size:2rem;
+.hero h2 {
+font-size: 1.3rem;
 }
 
-.hero h2{
-    font-size:1.3rem;
+.hero p {
+font-size: 1rem;
 }
 
-.hero p{
-    font-size:1rem;
+.ul-icons {
+justify-content: center;
+transform: none; }
+
+.btn {
+padding: 12px 22px;
+font-size: 15px;
 }
 
-.ul-icons{
-    justify-content:center;
-    transform:none;
+.cards {
+grid-template-columns: 1fr;
 }
 
-.btn{
-    padding:12px 22px;
-    font-size:15px;
+.projects-container {
+grid-template-columns: 1fr;
 }
 
-/* ===========================
-OTHER SECTIONS
-=========================== */
-
-.cards,
-.projects-container{
-    grid-template-columns:1fr;
+.slider {
+flex-direction: column;
+gap: 15px;
 }
 
-.slider{
-    flex-direction:column;
-    gap:15px;
+.slider img {
+width: 100%;
+height: auto;
+border-radius: 15px;
 }
 
-.slider img{
-    width:100%;
-    height:auto;
-    border-radius:15px;
+.slider button {
+width: 50px;
+height: 50px;
+min-width: 50px;
+font-size: 24px;
 }
 
-.slider button{
-    width:50px;
-    height:50px;
-    min-width:50px;
-    font-size:24px;
+.project-buttons {
+flex-direction: column;
 }
 
-.project-buttons{
-    flex-direction:column;
+.project-buttons .btn {
+width: auto;
+text-align: center;
+margin-right: 0;
 }
 
-.project-buttons .btn,
-.project-description .btn{
-    width:auto;
-    margin-right:0;
+.title {
+font-size: 2rem;
+margin-bottom: 40px;
 }
 
-.title{
-    font-size:2rem;
-    margin-bottom:40px;
-}
+.filter-buttons {
+gap: 10px; }
 
-.filter-buttons{
-    gap:10px;
-}
-
-.filter-buttons button{
-    padding:10px 20px;
-    font-size:15px;
+.filter-buttons button {
+padding: 10px 20px;
+font-size: 15px;
 }
 
 .about-page,
@@ -1196,58 +1154,78 @@ OTHER SECTIONS
 .languages,
 .contact-page,
 .social-section,
-.projects-page{
-    padding:50px 5%;
+.projects-page {
+padding: 50px 5%;
 }
 
-.contact-card,
-.card,
-.goal-card,
-.edu-card{
-    padding:30px 20px;
+.contact-card {
+padding: 20px;
 }
 
-.contact-card i{
-    font-size:35px;
+.contact-card i {
+font-size: 35px;
 }
 
-.card i{
-    font-size:45px;
+.social-icons {
+gap: 15px;
 }
 
-.goal-card i,
-.edu-card i{
-    font-size:50px;
+.social-icons a {
+width: 55px;
+height: 55px;
+font-size: 26px;
 }
 
-.social-icons{
-    gap:15px;
+.edu-card {
+padding: 30px 20px;
 }
 
-.social-icons a{
-    width:55px;
-    height:55px;
-    font-size:26px;
+.edu-card i {
+font-size: 50px;
 }
 
-.lightbox img{
-    width:95%;
-    border-radius:10px;
+.card {
+padding: 30px 20px;
 }
 
-#close-lightbox{
-    top:15px;
-    right:20px;
-    font-size:40px;
+.card i {
+font-size: 45px; }
+
+.goal-card {
+padding: 30px 20px;
 }
 
-/* إخفاء الفيديو */
-
-.back-vid{
-    display:none;
+.goal-card i {
+font-size: 50px;
 }
 
+.project-description .btn {
+width: auto;
+text-align: center;
+margin-right: 0;
 }
+
+.lightbox img {
+width: 95%;
+border-radius: 10px;
+}
+
+#close-lightbox {
+top: 15px;
+right: 20px;
+font-size: 40px;
+}
+
+/* إخفاء الفيديو على الجوال لتحسين الأداء */
+.back-vid {
+display: none;
+}
+
+body {
+background: linear-gradient(135deg, #050816 0%, #0a1628 50%, #050816 100%);
+}
+}
+
 /* ===========================
 RESPONSIVE - 480px (Small Mobile)
 =========================== */
@@ -1505,5 +1483,4 @@ border-radius: 10px;
 ::-webkit-scrollbar-thumb:hover {
 background: #53f8c9;
 }
-
 
