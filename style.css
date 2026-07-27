@@ -1485,3 +1485,28 @@ border-radius: 10px;
 background: #53f8c9;
 }
 
+
+
+/* ترتيب عناصر الهيدر */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* المجموعة التي فيها زر اللغة والمنيو */
+.nav-tools{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* في العربي لا تغيّر ترتيب الزرين */
+[dir="rtl"] .nav-tools{
+    flex-direction:row;
+}
+
+/* وفي الإنجليزي أيضاً */
+[dir="ltr"] .nav-tools{
+    flex-direction:row;
+}
