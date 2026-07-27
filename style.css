@@ -890,45 +890,99 @@ color: #08131d;
 box-shadow: 0 0 20px #4acfee;
 }
 
-/* ===========================
+/*==========================
 LIGHT MODE
-=========================== */
-body.light-mode {
-background: #eef8ff;
-color: #222;
+==========================*/
+
+body,
+.main-section,
+.card,
+.edu-card,
+.goal-card,
+.project-card,
+.contact-card,
+.btn,
+input,
+textarea,
+nav,
+.hero,
+.hero-img{
+    transition: .35s ease;
 }
 
-body.light-mode .main-section {
-background: rgba(255, 255, 255, 0.65);
-backdrop-filter: blur(15px);
-box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+/* خلفية الموقع */
+body.light-mode{
+    background:#edf8ff;
 }
 
-body.light-mode nav h1,
-body.light-mode nav a,
-body.light-mode p,
+/* الكارد الرئيسي */
+body.light-mode .main-section{
+    background:rgba(255,255,255,.93);
+    backdrop-filter:blur(20px);
+    box-shadow:0 0 35px rgba(74,207,238,.25);
+}
+
+/* النصوص */
+body.light-mode h1,
 body.light-mode h2,
 body.light-mode h3,
-body.light-mode li {
-color: #222;
+body.light-mode p,
+body.light-mode li,
+body.light-mode a{
+    color:#18344d;
 }
 
-body.light-mode .project-card,
+/* الروابط */
+body.light-mode nav a.active{
+    color:#00bfff;
+}
+
+/* الكروت */
 body.light-mode .card,
-body.light-mode .edu-card {
-background: #ffffff;
-color: #222;
+body.light-mode .edu-card,
+body.light-mode .goal-card,
+body.light-mode .project-card,
+body.light-mode .contact-card{
+    background:#f8fdff;
+    border:1px solid rgba(74,207,238,.35);
 }
 
-body.light-mode .btn { background: #4acfee;
-color: #fff;
+/* الأزرار */
+body.light-mode .btn{
+    background:#38c9f5;
+    color:white;
+    box-shadow:0 0 20px rgba(56,201,245,.35);
 }
 
-body.light-mode .btn:hover {
-background: #0f172a;
-color: white;
+body.light-mode .btn:hover{
+    transform:translateY(-3px);
 }
 
+/* الحقول */
+body.light-mode input,
+body.light-mode textarea{
+    background:white;
+    color:#18344d;
+    border:1px solid #87d8ef;
+}
+
+/* الأيقونات */
+body.light-mode .ul-icons a,
+body.light-mode .social-icons a{
+    border:2px solid #38c9f5;
+    color:#38c9f5;
+}
+
+body.light-mode .ul-icons a:hover,
+body.light-mode .social-icons a:hover{
+    background:#38c9f5;
+    color:white;
+}
+
+/* الفيديو */
+body.light-mode .back-vid{
+    opacity:.06;
+}
 /* ===========================
 LANGUAGE TOGGLE
 =========================== */
