@@ -894,12 +894,12 @@ box-shadow: 0 0 20px #4acfee;
 LIGHT MODE
 =========================== */
 body.light-mode {
-background: #2f3f4b;
+background: #eef8ff;
 color: #222;
 }
 
 body.light-mode .main-section {
-background: rgba(35, 77, 112, 0.65);
+background: rgba(255, 255, 255, 0.65);
 backdrop-filter: blur(15px);
 box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 }
@@ -916,7 +916,7 @@ color: #222;
 body.light-mode .project-card,
 body.light-mode .card,
 body.light-mode .edu-card {
-background: #2f3f4b;
+background: #ffffff;
 color: #222;
 }
 
