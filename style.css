@@ -889,169 +889,46 @@ background: #4acfee;
 color: #08131d;
 box-shadow: 0 0 20px #4acfee;
 }
-/*=====================================
-        OCEAN BLUE MODE
-======================================*/
 
-body.light-mode{
-    background:#0f2b46;
-    color:#ecf7ff;
+/* ===========================
+LIGHT MODE
+=========================== */
+body.light-mode {
+background: #2f3f4b;
+color: #222;
 }
 
-/* الفيديو */
-body.light-mode .back-vid{
-    opacity:.15;
-    filter:brightness(.6);
+body.light-mode .main-section {
+background: rgba(35, 77, 112, 0.65);
+backdrop-filter: blur(15px);
+box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 }
 
-/* الكارد الرئيسي */
-body.light-mode .main-section{
-
-    background:#143a5d;
-
-    box-shadow:0 0 35px rgba(0,185,255,.25);
-
-}
-
-/* القائمة */
-body.light-mode nav{
-
-    background:transparent;
-
-}
-
-/* النصوص */
-
-body.light-mode h1,
+body.light-mode nav h1,
+body.light-mode nav a,
+body.light-mode p,
 body.light-mode h2,
 body.light-mode h3,
-body.light-mode h4,
-body.light-mode p,
-body.light-mode span,
-body.light-mode li,
-body.light-mode a{
-
-color:#eef9ff;
-
+body.light-mode li {
+color: #222;
 }
 
-/* الروابط */
-
-body.light-mode nav ul li a:hover,
-body.light-mode nav ul li a.active{
-
-color:#49d6ff;
-
-}
-
-/* عنوان المطور */
-
-body.light-mode .hero h2{
-
-background:linear-gradient(
-90deg,
-#56e0ff,
-#5ddcff,
-#9be9ff
-);
-
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-
-}
-
-/* صورة البروفايل */
-
-body.light-mode .hero-img{
-
-box-shadow:0 0 20px #38c9f5;
-
-}
-
-/* الكروت */
-
-body.light-mode .card,
-body.light-mode .edu-card,
-body.light-mode .goal-card,
 body.light-mode .project-card,
-body.light-mode .contact-card{
-
-background:#19456d;
-
-border:1px solid rgba(74,207,238,.35);
-
+body.light-mode .card,
+body.light-mode .edu-card {
+background: #2f3f4b;
+color: #222;
 }
 
-/* الأزرار */
-
-body.light-mode .btn{
-
-background:#3acdf5;
-
-border-color:#3acdf5;
-
-color:#062033;
-
-box-shadow:0 0 18px rgba(58,205,245,.35);
-
+body.light-mode .btn { background: #4acfee;
+color: #fff;
 }
 
-body.light-mode .btn:hover{
-
-background:#59ddff;
-
+body.light-mode .btn:hover {
+background: #0f172a;
+color: white;
 }
 
-/* الفورم */
-
-body.light-mode input,
-body.light-mode textarea{
-
-background:#103353;
-
-border:1px solid #3acdf5;
-
-color:white;
-
-}
-
-body.light-mode input::placeholder,
-body.light-mode textarea::placeholder{
-
-color:#c9ecff;
-
-}
-
-/* أيقونات التواصل */
-
-body.light-mode .ul-icons a,
-body.light-mode .social-icons a{
-
-border:2px solid #46d7ff;
-
-color:#46d7ff;
-
-}
-
-body.light-mode .ul-icons a:hover,
-body.light-mode .social-icons a:hover{
-
-background:#46d7ff;
-
-color:#062033;
-
-}
-
-/* أزرار اللغة والثيم */
-
-body.light-mode .language-toggle,
-body.light-mode .theme-toggle{
-
-background:#46d7ff;
-
-color:#062033;
-
-}
 /* ===========================
 LANGUAGE TOGGLE
 =========================== */
