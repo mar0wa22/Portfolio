@@ -891,48 +891,6 @@ box-shadow: 0 0 20px #4acfee;
 }
 
 /* ===========================
-LIGHT MODE
-=========================== */
-body.light-mode {
-background: #d9f3ff;
-color: #222;
-}
-
-body.light-mode .main-section {
-background: rgba(255, 255, 255, 0.65);
-backdrop-filter: blur(15px);
-box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-}
-
-body.light-mode nav h1,
-body.light-mode nav a,
-body.light-mode p,
-body.light-mode h2,
-body.light-mode h3,
-body.light-mode li {
-color: #222;
-}
-
-body.light-mode .project-card,
-body.light-mode .card,
-body.light-mode .edu-card {
-background: #ffffff;
-color: #222;
-}
-
-body.light-mode .btn { background: #4acfee;
-color: #fff;
-}
-
-body.light-mode .btn:hover {
-background: #0f172a;
-color: white;
-}
-body.light-mode nav ul li a{
-    color:#ffffff !important;
-}
-
-/* ===========================
 LANGUAGE TOGGLE
 =========================== */
 .nav-tools {
