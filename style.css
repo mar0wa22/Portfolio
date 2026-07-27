@@ -928,19 +928,8 @@ body.light-mode .btn:hover {
 background: #0f172a;
 color: white;
 }
-/* النصوص */
-body.light-mode,
-body.light-mode h1,
-body.light-mode h2,
-body.light-mode h3,
-body.light-mode h4,
-body.light-mode h5,
-body.light-mode p,
-body.light-mode span,
-body.light-mode li,
-body.light-mode a,
-body.light-mode label {
-    color: #ffffff !important;
+body.light-mode nav ul li a{
+    color:#ffffff !important;
 }
 
 /* ===========================
