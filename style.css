@@ -894,7 +894,7 @@ box-shadow: 0 0 20px #4acfee;
 LIGHT MODE
 =========================== */
 body.light-mode {
-background: #eef8ff;
+background: linear-gradient(135deg, #dbeafe, #c7e9ff);
 color: #222;
 }
 
