@@ -890,98 +890,189 @@ color: #08131d;
 box-shadow: 0 0 20px #4acfee;
 }
 
-/*==========================
-LIGHT MODE
-==========================*/
+/*====================================
+ PREMIUM LIGHT MODE
+=====================================*/
 
 body,
 .main-section,
+nav,
 .card,
 .edu-card,
 .goal-card,
 .project-card,
 .contact-card,
+.hero-img,
 .btn,
 input,
 textarea,
-nav,
-.hero,
-.hero-img{
-    transition: .35s ease;
+.ul-icons a,
+.social-icons a{
+    transition:all .35s ease;
 }
 
-/* خلفية الموقع */
+/* الخلفية */
+
 body.light-mode{
-    background:#edf8ff;
+    background:linear-gradient(135deg,#edf8ff,#dff5ff,#eefbff);
+}
+
+/* الفيديو */
+
+body.light-mode .back-vid{
+    opacity:.05;
+    filter:brightness(2);
 }
 
 /* الكارد الرئيسي */
+
 body.light-mode .main-section{
-    background:rgba(255,255,255,.93);
-    backdrop-filter:blur(20px);
-    box-shadow:0 0 35px rgba(74,207,238,.25);
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.8);
+
+    box-shadow:
+    0 15px 45px rgba(0,170,255,.15);
+
 }
 
 /* النصوص */
+
 body.light-mode h1,
 body.light-mode h2,
 body.light-mode h3,
+body.light-mode h4,
 body.light-mode p,
 body.light-mode li,
 body.light-mode a{
-    color:#18344d;
+
+    color:#15354f;
+
 }
 
-/* الروابط */
-body.light-mode nav a.active{
-    color:#00bfff;
+/* عنوان المطور */
+
+body.light-mode .hero h2{
+
+background:linear-gradient(
+90deg,
+#0fb9ff,
+#00d2ff,
+#2b8cff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+/* صورة البروفايل */
+
+body.light-mode .hero-img{
+
+box-shadow:0 0 35px rgba(0,183,255,.25);
+
+}
+
+/* الأزرار */
+
+body.light-mode .btn{
+
+background:linear-gradient(90deg,#24c5ff,#00b7ff);
+
+color:white;
+
+box-shadow:0 0 25px rgba(0,183,255,.35);
+
+}
+
+body.light-mode .btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 35px rgba(0,183,255,.45);
+
 }
 
 /* الكروت */
+
 body.light-mode .card,
 body.light-mode .edu-card,
 body.light-mode .goal-card,
 body.light-mode .project-card,
 body.light-mode .contact-card{
-    background:#f8fdff;
-    border:1px solid rgba(74,207,238,.35);
+
+background:rgba(255,255,255,.55);
+
+border:1px solid rgba(0,180,255,.2);
+
 }
 
-/* الأزرار */
-body.light-mode .btn{
-    background:#38c9f5;
-    color:white;
-    box-shadow:0 0 20px rgba(56,201,245,.35);
-}
+/* الفورم */
 
-body.light-mode .btn:hover{
-    transform:translateY(-3px);
-}
-
-/* الحقول */
 body.light-mode input,
 body.light-mode textarea{
-    background:white;
-    color:#18344d;
-    border:1px solid #87d8ef;
+
+background:white;
+
+border:1px solid #bcecff;
+
+color:#173952;
+
+}
+
+body.light-mode input::placeholder,
+body.light-mode textarea::placeholder{
+
+color:#7b97a9;
+
 }
 
 /* الأيقونات */
+
 body.light-mode .ul-icons a,
 body.light-mode .social-icons a{
-    border:2px solid #38c9f5;
-    color:#38c9f5;
+
+border:2px solid #1cbfff;
+
+color:#1cbfff;
+
+background:white;
+
 }
 
 body.light-mode .ul-icons a:hover,
 body.light-mode .social-icons a:hover{
-    background:#38c9f5;
-    color:white;
+
+background:#1cbfff;
+
+color:white;
+
+transform:translateY(-6px) scale(1.08);
+
+box-shadow:0 0 25px rgba(0,183,255,.35);
+
 }
 
-/* الفيديو */
-body.light-mode .back-vid{
-    opacity:.06;
+/* القائمة */
+
+body.light-mode nav{
+
+background:rgba(255,255,255,.25);
+
+backdrop-filter:blur(20px);
+
+}
+
+/* الرابط النشط */
+
+body.light-mode nav ul li a.active{
+
+color:#00aef0;
+
 }
 /* ===========================
 LANGUAGE TOGGLE
