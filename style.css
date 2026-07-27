@@ -893,48 +893,29 @@ box-shadow: 0 0 20px #4acfee;
 /* ===========================
 LANGUAGE TOGGLE
 =========================== */
-/* ===========================
-NAV TOOLS
-=========================== */
-
-.nav-tools{
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.nav-tools {
+display: flex;
+align-items: center;
+gap: 15px;
 }
 
-/* لا يتغير ترتيب الأزرار عند تغيير اللغة */
-[dir="rtl"] .nav-tools,
-[dir="ltr"] .nav-tools{
-    flex-direction: row;
+.language-toggle {
+border: 2px solid #4acfee;
+color: #4acfee;
+padding: 10px 18px;
+border-radius: 30px;
+cursor: pointer;
+font-weight: bold;
+transition: 0.3s;
+touch-action: manipulation;
 }
 
-/* زر اللغة */
-.language-toggle{
-    border: 2px solid #4acfee;
-    color: #4acfee;
-    padding: 10px 18px;
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: .3s;
-    touch-action: manipulation;
+.language-toggle:hover {
+background: #4acfee;
+color: #08131d;
+box-shadow: 0 0 15px #4acfee;
 }
 
-.language-toggle:hover{
-    background:#4acfee;
-    color:#08131d;
-    box-shadow:0 0 15px #4acfee;
-}
-
-/* زر القائمة */
-.menu-toggle{
-    display:none;
-    font-size:34px;
-    color:#4acfee;
-    cursor:pointer;
-    touch-action:manipulation;
-}
 /* ===========================
 MOBILE MENU
 =========================== */
@@ -1015,157 +996,197 @@ padding: 25px;
 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 }
-
 /* ===========================
 RESPONSIVE - 768px (Mobile)
 =========================== */
-@media (max-width: 768px) {
-body {
-padding: 15px 0;
+@media (max-width:768px){
+
+body{
+    padding:15px 0;
+    background:linear-gradient(135deg,#050816 0%,#0a1628 50%,#050816 100%);
 }
 
-.main-section {
-width: 95%;
-border-radius: 25px;
-padding-bottom: 40px;
+.main-section{
+    width:95%;
+    border-radius:25px;
+    padding-bottom:40px;
 }
+
+/* ===========================
+NAVBAR
+=========================== */
 
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px;
     position:relative;
-    flex-wrap:nowrap;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
 }
 
+/* عنوان الموقع */
+nav h1{
+    width:100%;
+    font-size:22px;
+    text-align:left;
+}
+
+/* زر اللغة */
 .nav-tools{
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+
+/* زر القائمة */
+.menu-toggle{
+    display:block;
+    position:absolute;
+    top:20px;
+    right:20px;
+    font-size:34px;
+    color:#4acfee;
+    cursor:pointer;
+}
+
+/* عند العربية */
+[dir="rtl"] nav h1{
+    text-align:right;
 }
 
 [dir="rtl"] .nav-tools{
-    flex-direction: row;
+    left:auto;
+    right:20px;
 }
 
-nav h1 {
-font-size: 22px;
+[dir="rtl"] .menu-toggle{
+    right:auto;
+    left:20px;
 }
 
-.menu-toggle {
-display: block;
+/* القائمة المنسدلة */
+
+nav ul{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:rgba(10,15,30,.97);
+    backdrop-filter:blur(20px);
+    border-radius:20px;
+    padding:20px 0;
+    z-index:1000;
 }
 
-nav ul {
-display: none;
-flex-direction: column;
-position: absolute;
-top: 80px; left: 0;
-width: 100%;
-background: rgba(10, 15, 30, 0.97);
-backdrop-filter: blur(20px);
-padding: 20px 0;
-border-radius: 20px;
-z-index: 1000;
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+nav ul.show{
+    display:flex;
 }
 
-nav ul.show {
-display: flex;
+nav ul li{
+    text-align:center;
+    padding:15px 0;
 }
 
-nav ul li {
-text-align: center;
-padding: 15px 0;
+nav a{
+    font-size:18px;
+    padding:10px 20px;
 }
 
-nav a {
-font-size: 18px;
-padding: 10px 20px;
+/* ===========================
+HERO
+=========================== */
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    padding:30px 5%;
+    gap:30px;
 }
 
-.hero {
-padding: 30px 5%;
-gap: 30px;
-}
 .hero-info{
-   width: 100%;
-}
-.hero-img {
-width: 250px;
-height: 250px;
-max-width: 250px;
+    width:100%;
 }
 
-.hero h1 {
-font-size: 2rem;
+.hero-img{
+    width:250px;
+    height:250px;
+    max-width:250px;
+    margin:auto;
 }
 
-.hero h2 {
-font-size: 1.3rem;
+.hero h1{
+    font-size:2rem;
 }
 
-.hero p {
-font-size: 1rem;
+.hero h2{
+    font-size:1.3rem;
 }
 
-.ul-icons {
-justify-content: center;
-transform: none; }
-
-.btn {
-padding: 12px 22px;
-font-size: 15px;
+.hero p{
+    font-size:1rem;
 }
 
-.cards {
-grid-template-columns: 1fr;
+.ul-icons{
+    justify-content:center;
+    transform:none;
 }
 
-.projects-container {
-grid-template-columns: 1fr;
+.btn{
+    padding:12px 22px;
+    font-size:15px;
 }
 
-.slider {
-flex-direction: column;
-gap: 15px;
+/* ===========================
+OTHER SECTIONS
+=========================== */
+
+.cards,
+.projects-container{
+    grid-template-columns:1fr;
 }
 
-.slider img {
-width: 100%;
-height: auto;
-border-radius: 15px;
+.slider{
+    flex-direction:column;
+    gap:15px;
 }
 
-.slider button {
-width: 50px;
-height: 50px;
-min-width: 50px;
-font-size: 24px;
+.slider img{
+    width:100%;
+    height:auto;
+    border-radius:15px;
 }
 
-.project-buttons {
-flex-direction: column;
+.slider button{
+    width:50px;
+    height:50px;
+    min-width:50px;
+    font-size:24px;
 }
 
-.project-buttons .btn {
-width: auto;
-text-align: center;
-margin-right: 0;
+.project-buttons{
+    flex-direction:column;
 }
 
-.title {
-font-size: 2rem;
-margin-bottom: 40px;
+.project-buttons .btn,
+.project-description .btn{
+    width:auto;
+    margin-right:0;
 }
 
-.filter-buttons {
-gap: 10px; }
+.title{
+    font-size:2rem;
+    margin-bottom:40px;
+}
 
-.filter-buttons button {
-padding: 10px 20px;
-font-size: 15px;
+.filter-buttons{
+    gap:10px;
+}
+
+.filter-buttons button{
+    padding:10px 20px;
+    font-size:15px;
 }
 
 .about-page,
@@ -1175,78 +1196,58 @@ font-size: 15px;
 .languages,
 .contact-page,
 .social-section,
-.projects-page {
-padding: 50px 5%;
+.projects-page{
+    padding:50px 5%;
 }
 
-.contact-card {
-padding: 20px;
+.contact-card,
+.card,
+.goal-card,
+.edu-card{
+    padding:30px 20px;
 }
 
-.contact-card i {
-font-size: 35px;
+.contact-card i{
+    font-size:35px;
 }
 
-.social-icons {
-gap: 15px;
+.card i{
+    font-size:45px;
 }
 
-.social-icons a {
-width: 55px;
-height: 55px;
-font-size: 26px;
+.goal-card i,
+.edu-card i{
+    font-size:50px;
 }
 
-.edu-card {
-padding: 30px 20px;
+.social-icons{
+    gap:15px;
 }
 
-.edu-card i {
-font-size: 50px;
+.social-icons a{
+    width:55px;
+    height:55px;
+    font-size:26px;
 }
 
-.card {
-padding: 30px 20px;
+.lightbox img{
+    width:95%;
+    border-radius:10px;
 }
 
-.card i {
-font-size: 45px; }
-
-.goal-card {
-padding: 30px 20px;
+#close-lightbox{
+    top:15px;
+    right:20px;
+    font-size:40px;
 }
 
-.goal-card i {
-font-size: 50px;
+/* إخفاء الفيديو */
+
+.back-vid{
+    display:none;
 }
 
-.project-description .btn {
-width: auto;
-text-align: center;
-margin-right: 0;
 }
-
-.lightbox img {
-width: 95%;
-border-radius: 10px;
-}
-
-#close-lightbox {
-top: 15px;
-right: 20px;
-font-size: 40px;
-}
-
-/* إخفاء الفيديو على الجوال لتحسين الأداء */
-.back-vid {
-display: none;
-}
-
-body {
-background: linear-gradient(135deg, #050816 0%, #0a1628 50%, #050816 100%);
-}
-}
-
 /* ===========================
 RESPONSIVE - 480px (Small Mobile)
 =========================== */
@@ -1504,6 +1505,5 @@ border-radius: 10px;
 ::-webkit-scrollbar-thumb:hover {
 background: #53f8c9;
 }
-
 
 
