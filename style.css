@@ -1011,9 +1011,22 @@ border-radius: 25px;
 padding-bottom: 40px;
 }
 
-nav {
-padding: 20px;
-position: relative;
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.nav-tools{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+[dir="rtl"] .nav-tools{
+    flex-direction: row;
 }
 
 nav h1 {
