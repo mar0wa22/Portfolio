@@ -889,53 +889,34 @@ background: #4acfee;
 color: #08131d;
 box-shadow: 0 0 20px #4acfee;
 }
-
-/*====================================
- PREMIUM LIGHT MODE
-=====================================*/
-
-body,
-.main-section,
-nav,
-.card,
-.edu-card,
-.goal-card,
-.project-card,
-.contact-card,
-.hero-img,
-.btn,
-input,
-textarea,
-.ul-icons a,
-.social-icons a{
-    transition:all .35s ease;
-}
-
-/* الخلفية */
+/*=====================================
+        OCEAN BLUE MODE
+======================================*/
 
 body.light-mode{
-    background:linear-gradient(135deg,#edf8ff,#dff5ff,#eefbff);
+    background:#0f2b46;
+    color:#ecf7ff;
 }
 
 /* الفيديو */
-
 body.light-mode .back-vid{
-    opacity:.05;
-    filter:brightness(2);
+    opacity:.15;
+    filter:brightness(.6);
 }
 
 /* الكارد الرئيسي */
-
 body.light-mode .main-section{
 
-    background:rgba(255,255,255,.72);
+    background:#143a5d;
 
-    backdrop-filter:blur(22px);
+    box-shadow:0 0 35px rgba(0,185,255,.25);
 
-    border:1px solid rgba(255,255,255,.8);
+}
 
-    box-shadow:
-    0 15px 45px rgba(0,170,255,.15);
+/* القائمة */
+body.light-mode nav{
+
+    background:transparent;
 
 }
 
@@ -946,10 +927,20 @@ body.light-mode h2,
 body.light-mode h3,
 body.light-mode h4,
 body.light-mode p,
+body.light-mode span,
 body.light-mode li,
 body.light-mode a{
 
-    color:#15354f;
+color:#eef9ff;
+
+}
+
+/* الروابط */
+
+body.light-mode nav ul li a:hover,
+body.light-mode nav ul li a.active{
+
+color:#49d6ff;
 
 }
 
@@ -959,9 +950,9 @@ body.light-mode .hero h2{
 
 background:linear-gradient(
 90deg,
-#0fb9ff,
-#00d2ff,
-#2b8cff
+#56e0ff,
+#5ddcff,
+#9be9ff
 );
 
 -webkit-background-clip:text;
@@ -973,27 +964,7 @@ background:linear-gradient(
 
 body.light-mode .hero-img{
 
-box-shadow:0 0 35px rgba(0,183,255,.25);
-
-}
-
-/* الأزرار */
-
-body.light-mode .btn{
-
-background:linear-gradient(90deg,#24c5ff,#00b7ff);
-
-color:white;
-
-box-shadow:0 0 25px rgba(0,183,255,.35);
-
-}
-
-body.light-mode .btn:hover{
-
-transform:translateY(-5px);
-
-box-shadow:0 0 35px rgba(0,183,255,.45);
+box-shadow:0 0 20px #38c9f5;
 
 }
 
@@ -1005,9 +976,29 @@ body.light-mode .goal-card,
 body.light-mode .project-card,
 body.light-mode .contact-card{
 
-background:rgba(255,255,255,.55);
+background:#19456d;
 
-border:1px solid rgba(0,180,255,.2);
+border:1px solid rgba(74,207,238,.35);
+
+}
+
+/* الأزرار */
+
+body.light-mode .btn{
+
+background:#3acdf5;
+
+border-color:#3acdf5;
+
+color:#062033;
+
+box-shadow:0 0 18px rgba(58,205,245,.35);
+
+}
+
+body.light-mode .btn:hover{
+
+background:#59ddff;
 
 }
 
@@ -1016,62 +1007,49 @@ border:1px solid rgba(0,180,255,.2);
 body.light-mode input,
 body.light-mode textarea{
 
-background:white;
+background:#103353;
 
-border:1px solid #bcecff;
+border:1px solid #3acdf5;
 
-color:#173952;
+color:white;
 
 }
 
 body.light-mode input::placeholder,
 body.light-mode textarea::placeholder{
 
-color:#7b97a9;
+color:#c9ecff;
 
 }
 
-/* الأيقونات */
+/* أيقونات التواصل */
 
 body.light-mode .ul-icons a,
 body.light-mode .social-icons a{
 
-border:2px solid #1cbfff;
+border:2px solid #46d7ff;
 
-color:#1cbfff;
-
-background:white;
+color:#46d7ff;
 
 }
 
 body.light-mode .ul-icons a:hover,
 body.light-mode .social-icons a:hover{
 
-background:#1cbfff;
+background:#46d7ff;
 
-color:white;
-
-transform:translateY(-6px) scale(1.08);
-
-box-shadow:0 0 25px rgba(0,183,255,.35);
+color:#062033;
 
 }
 
-/* القائمة */
+/* أزرار اللغة والثيم */
 
-body.light-mode nav{
+body.light-mode .language-toggle,
+body.light-mode .theme-toggle{
 
-background:rgba(255,255,255,.25);
+background:#46d7ff;
 
-backdrop-filter:blur(20px);
-
-}
-
-/* الرابط النشط */
-
-body.light-mode nav ul li a.active{
-
-color:#00aef0;
+color:#062033;
 
 }
 /* ===========================
