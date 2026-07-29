@@ -1012,17 +1012,38 @@ padding-bottom: 40px;
 }
 nav{
     position: relative;
-    padding:20px;
+    padding: 20px;
 }
 
 .menu-toggle{
-    display:block;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
 }
 
 .nav-tools{
-    display:flex;
-    align-items:center;
-    gap:15px;
+    position: absolute;
+    top: 70px;      /* تحت زر القائمة */
+    right: 20px;
+}
+
+.language-toggle{
+    width: 60px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body[dir="rtl"] .menu-toggle{
+    right: auto;
+    left: 20px;
+}
+
+body[dir="rtl"] .nav-tools{
+    right: auto;
+    left: 20px;
 }
 
 nav h1 {
