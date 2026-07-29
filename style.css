@@ -1010,31 +1010,20 @@ width: 95%;
 border-radius: 25px;
 padding-bottom: 40px;
 }
-
 nav{
-    display:grid;
-    grid-template-columns:50px 1fr 60px;
-    align-items:center;
-}
-
-.logo{
-    text-align:center;
-    font-size:22px;
-}
-
-.right-tools{
-    justify-content:flex-end;
+    position: relative;
+    padding:20px;
 }
 
 .menu-toggle{
-    display: block;
-    order:0;
+    display:block;
 }
 
-.language-toggle{
-    order:1;
+.nav-tools{
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
-
 
 nav h1 {
 font-size: 22px;
