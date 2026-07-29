@@ -1012,28 +1012,32 @@ padding-bottom: 40px;
 }
 
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: relative;
+    display:grid;
+    grid-template-columns:50px 1fr 60px;
+    align-items:center;
 }
 
-.nav-tools{
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.logo{
+    text-align:center;
+    font-size:22px;
 }
 
-[dir="rtl"] .nav-tools{
-    flex-direction: row;
+.right-tools{
+    justify-content:flex-end;
 }
+
+.menu-toggle{
+    display: block;
+    order:0;
+}
+
+.language-toggle{
+    order:1;
+}
+
+
 nav h1 {
 font-size: 22px;
-}
-
-.menu-toggle {
-display: block;
 }
 
 nav ul {
