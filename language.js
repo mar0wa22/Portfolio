@@ -6,7 +6,7 @@ const translations = {
         projects: "Projects",
         contact: "Contact",
         engineer: "Engineer",
-        marwa: "Marwa abdelwahab"
+        marwa: "Marwa Abdelwahab"
 
         // Hero Section
         hello: "Hi, I'm Marwa",
