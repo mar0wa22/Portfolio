@@ -1010,44 +1010,30 @@ width: 95%;
 border-radius: 25px;
 padding-bottom: 40px;
 }
-nav{
-    position: relative;
-    padding: 20px;
-}
 
-.menu-toggle{
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1001;
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
 }
 
 .nav-tools{
-    position: absolute;
-    top: 70px;      /* تحت زر القائمة */
-    right: 20px;
-}
-
-.language-toggle{
-    width: 60px;
-    height: 42px;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-body[dir="rtl"] .menu-toggle{
-    right: auto;
-    left: 20px;
+    gap: 15px;
 }
 
-body[dir="rtl"] .nav-tools{
-    right: auto;
-    left: 20px;
+[dir="rtl"] .nav-tools{
+    flex-direction: row;
 }
-
 nav h1 {
 font-size: 22px;
+}
+
+.menu-toggle {
+display: block;
 }
 
 nav ul {
