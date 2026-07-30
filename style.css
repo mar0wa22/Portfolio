@@ -456,7 +456,7 @@ padding: 80px 10%;
 .language-box {
 display: flex;
 flex-direction: column;
-gap: 35px;
+gap: 10px;
 }
 
 .lang span {
