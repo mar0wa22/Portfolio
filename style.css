@@ -456,8 +456,12 @@ padding: 80px 10%;
 .language-box {
 display: flex;
 flex-direction: column;
-gap: 10px;
+gap: 35px;
 }
+
+/* .language-btn{
+
+} */
 
 .lang span {
 font-size: 22px;
@@ -896,13 +900,13 @@ LANGUAGE TOGGLE
 .nav-tools {
 display: flex;
 align-items: center;
-/* gap: 15px; */
+gap: 15px;
 }
 
 .language-toggle {
 border: 2px solid #4acfee;
 color: #4acfee;
-padding: 10px 18px;
+padding: 10px;
 border-radius: 30px;
 cursor: pointer;
 font-weight: bold;
@@ -1257,7 +1261,7 @@ font-size: 20px;
 }
 
 .language-toggle {
-padding: 8px 14px;
+padding: 14px;
 font-size: 14px;
 }
 
