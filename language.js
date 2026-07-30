@@ -6,6 +6,7 @@ const translations = {
         projects: "Projects",
         contact: "Contact",
         engineer: "Engineer",
+        name:     "Marwa Al-mansour",
 
         // Hero Section
         hello: "Hi, I'm Marwa",
@@ -92,6 +93,7 @@ const translations = {
         projects: "المشاريع",
         contact: "تواصل",
         engineer: "المهندسة",
+        name:     "مروة المنصور"
 
         // Hero Section
         hello: "مرحباً، أنا مروة",
