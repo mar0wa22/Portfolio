@@ -896,13 +896,13 @@ LANGUAGE TOGGLE
 .nav-tools {
 display: flex;
 align-items: center;
-gap: 15px;
+/* gap: 15px; */
 }
 
 .language-toggle {
 border: 2px solid #4acfee;
 color: #4acfee;
-padding: 6px 10px;
+padding: 10px 18px;
 border-radius: 30px;
 cursor: pointer;
 font-weight: bold;
