@@ -93,7 +93,7 @@ const translations = {
         projects: "المشاريع",
         contact: "تواصل",
         engineer: "المهندسة",
-        name:     "مروة المنصور"
+        name:  "مروة المنصور"
 
         // Hero Section
         hello: "مرحباً، أنا مروة",
