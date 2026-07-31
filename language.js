@@ -91,7 +91,7 @@ const translations = {
         home: "الرئيسية",
         about: "من أنا",
         projects: "المشاريع",
-        contact: "تواصل",
+        contact: "تواصل بنا",
         engineer: "المهندسة",
         name: "مروة المنصور",
 
