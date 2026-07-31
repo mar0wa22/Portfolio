@@ -1216,10 +1216,7 @@ right: 20px;
 font-size: 40px;
 }
 
-/* إخفاء الفيديو على الجوال لتحسين الأداء */
-.back-vid {
-display: none;
-}
+
 
 body {
 background: linear-gradient(135deg, #050816 0%, #0a1628 50%, #050816 100%);
