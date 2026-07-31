@@ -4,7 +4,7 @@ const translations = {
         home: "Home",
         about: "About",
         projects: "Projects",
-        contact: "Contact US",
+        contact: "Contact Us",
         engineer: "Engineer",
         name: "Marwa Al-Mansour",
 
