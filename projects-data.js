@@ -61,13 +61,13 @@ const projects = {
                 "Logo Design",
                 "Social Media Posts",
                 "UI/UX Design",
-                "Brand Identity"
+                "Occasions Invitations"
             ],
             ar: [
                 "تصميم الشعارات",
                 "تصاميم السوشيال ميديا",
                 "تصميم واجهات المستخدم",
-                "الهوية البصرية"
+                "دعوات المناسبات"
             ]
         },
         github: "https://github.com",
