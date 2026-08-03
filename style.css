@@ -938,14 +938,18 @@ overflow-x: hidden;
 }
 
 .language-toggle {
-border: 2px solid #4acfee;
-color: #4acfee;
-padding: 10px 18px;
-border-radius: 30px;
-cursor: pointer;
-font-weight: bold;
-transition: 0.3s;
-touch-action: manipulation;
+    position: absolute;
+    top: 105px;
+    right: 70px;
+    width: 55px;
+    height: 35px;
+    color: #4acfee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    touch-action: manipulation;
+    
 }
 
 /* فقط الصفحة الرئيسية بدون تمرير */
