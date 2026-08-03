@@ -937,13 +937,7 @@ overflow-y: auto;
 overflow-x: hidden;
 }
 
-/* فقط الصفحة الرئيسية بدون تمرير */
-body.no-scroll-page {
-height: 100vh;
-overflow: hidden;
-
-@media (min-width: 1220px) {
-    .language-toggle {
+.language-toggle {
     position: absolute;
     top: 105px;
     right: 40px;
@@ -953,6 +947,13 @@ overflow: hidden;
     justify-content: center;
     align-items: center;
 }
+
+/* فقط الصفحة الرئيسية بدون تمرير */
+body.no-scroll-page {
+height: 100vh;
+overflow: hidden;
+}
+
 
 .right-tools {
     position: absolute;
@@ -964,7 +965,7 @@ body[dir="rtl"] .language-toggle {
     left: 40px;
 }
 }
-}
+
 
 /* ===========================
 RESPONSIVE - 992px (Tablet)
@@ -1519,4 +1520,3 @@ border-radius: 10px;
 background: #53f8c9;
 }
 
-}
