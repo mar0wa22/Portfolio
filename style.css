@@ -941,6 +941,28 @@ overflow-x: hidden;
 body.no-scroll-page {
 height: 100vh;
 overflow: hidden;
+
+@media (min-width: 1220px) {
+    .language-toggle {
+    position: absolute;
+    top: 105px;
+    right: 40px;
+    width: 55px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-tools {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+body[dir="rtl"] .language-toggle {
+    right: auto;
+    left: 40px;
+}
 }
 }
 
@@ -1216,7 +1238,10 @@ right: 20px;
 font-size: 40px;
 }
 
-
+/* إخفاء الفيديو على الجوال لتحسين الأداء
+.back-vid {
+display: none;
+} */
 
 body {
 background: linear-gradient(135deg, #050816 0%, #0a1628 50%, #050816 100%);
@@ -1494,3 +1519,4 @@ border-radius: 10px;
 background: #53f8c9;
 }
 
+}
