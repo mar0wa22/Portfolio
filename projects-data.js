@@ -4,6 +4,9 @@ const projects = {
             en: "Portfolio Website",
             ar: "الموقع الشخصي"
         },
+
+        cover: "images/projects/portfolio/cover1.png",
+
         description: {
             en: "My personal portfolio website showcasing my skills, projects and experience as an Information Technology student.",
             ar: "موقعي الشخصي الذي يعرض مهاراتي ومشاريعي وخبراتي كطالبة في تخصص تقنية المعلومات."
@@ -46,6 +49,9 @@ const projects = {
             en: "Graphic Design",
             ar: "التصميم الجرافيكي"
         },
+
+         cover: "images/projects/portfolio/cover3.png",
+
         description: {
             en: "Creative graphic design projects using Photoshop, Illustrator, Adobe XD and Figma.",
             ar: "مجموعة تصاميم احترافية باستخدام Photoshop و Illustrator و Adobe XD و Figma."
@@ -83,6 +89,9 @@ const projects = {
             en: "Flutter Mobile Application",
             ar: "تطبيق Flutter"
         },
+
+         cover: "images/projects/portfolio/cover2.png",
+
         description: {
             en: "Cross-platform mobile application built using Flutter and Firebase.",
             ar: "تطبيق جوال متعدد المنصات تم تطويره باستخدام Flutter و Firebase."
@@ -112,7 +121,7 @@ const projects = {
             "images/projects/flutter/1.png",
             "images/projects/flutter/2.jpg",
             "images/projects/flutter/3.jpg",
-            "images/projects/flutter/4.jpg"
+            "images/projects/flutter/4.jpg",
         ]
     }
 };
