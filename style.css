@@ -962,7 +962,7 @@ overflow: hidden;
 }
 body[dir="rtl"] .language-toggle {
     right: auto;
-    left: 40px;
+    left: 70px;
 }
 }
 
