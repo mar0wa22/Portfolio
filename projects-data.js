@@ -99,7 +99,8 @@ const projects = {
         technologies: [
             "Flutter",
             "Firebase",
-            "Dart"
+            "Dart",
+            "Laravel"
         ],
         features: {
             en: [
