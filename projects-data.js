@@ -122,6 +122,11 @@ const projects = {
             "images/projects/flutter/2.jpg",
             "images/projects/flutter/3.jpg",
             "images/projects/flutter/4.jpg",
+            "images/projects/flutter/5.jpg",
+            "images/projects/flutter/6.jpg",
+            "images/projects/flutter/7.jpg",
+            "images/projects/flutter/8.jpg",
+            "images/projects/flutter/9.jpg",
         ]
     }
 };
