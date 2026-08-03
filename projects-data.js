@@ -138,6 +138,16 @@ const projects = {
             "images/projects/flutter/18.png",
             "images/projects/flutter/19.png",
             "images/projects/flutter/20.png",
+            "images/projects/flutter/21.png",
+            "images/projects/flutter/22.png",
+            "images/projects/flutter/23.png",
+            "images/projects/flutter/24.png",
+            "images/projects/flutter/25.png",
+            "images/projects/flutter/26.png",
+            "images/projects/flutter/27.png",
+            "images/projects/flutter/28.png",
+            "images/projects/flutter/29.png",
+            "images/projects/flutter/30.png",
         ]
     }
 };
