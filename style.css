@@ -940,7 +940,7 @@ overflow-x: hidden;
 .language-toggle {
     position: absolute;
     top: 105px;
-    right: 22px;
+    right: 70px;
     width: 55px;
     height: 35px;
     display: flex;
